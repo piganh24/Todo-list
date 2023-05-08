@@ -1,0 +1,51 @@
+$color-main: #af7eeb;
+$color-body: #e3e9ff;
+$color-background-todo: white;
+$color-text-main: black;
+
+@mixin text-formatting-main($fontSize,$color,$fontWeight) {
+    font-size: $fontSize;
+    color: $color;
+    font-weight: $fontWeight;
+}
+
+body{
+    background-color: $color-body;
+}
+
+.container-logo{
+    height: 75px;
+    margin-top: 200px;
+    max-width: 500px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    background-color: $color-main;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    @include text-formatting-main(18px,$color-background-todo,bold);
+}
+
+.container-todo{
+    background-color:$color-background-todo;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 500px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    @include text-formatting-main(18px,$color-text-main,none);
+}
+
+.btn-add{
+    top: 85%;
+    position: absolute;
+    justify-content: center;
+}
