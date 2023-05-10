@@ -1,0 +1,61 @@
+body {
+  background-color: #e3e9ff;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-header {
+  width: 500px;
+  height: 75px;
+  background-color: #af7eeb;
+  margin-top: 100px;
+}
+.todo-header .menu {
+  text-align: center;
+  margin: 0;
+  margin-top: 22px;
+  font-size: 18px;
+  color: white;
+  font-weight: "bold";
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-items-container {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.todo-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  margin: 5px 0px 5px 0px;
+}
+
+.todo-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -14px;
+}
+
+.task-name {
+  margin-bottom: 5px;
+}
+
+.trash-ico {
+  margin-left: 5px;
+  width: 15px;
+}/*# sourceMappingURL=main.css.map */

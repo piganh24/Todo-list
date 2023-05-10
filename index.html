@@ -12,17 +12,31 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
-
     <title>Website todo</title>
   </head>
   <body>
-    <div class="container-logo">Website todo</div>
-    <div class="container-todo">
-      <button type="button" class="btn-add">+ New Task</button>
-      <div class="list">
-        <li><input type="radio" name="task" /> test</li>
-        <li><input type="radio" name="task" /> test</li>
-        <li><input type="radio" name="task" /> test</li>
+    <div class="app">
+      <div class="todo-container">
+        <div class="todo-header">
+          <div class="menu">Website todo</div>
+          <h1 class="title"></h1>
+        </div>
+        <div class="todo-items-container">
+          <div class="todo-items" id="todo-list">
+            <div class="todo-item">
+              <p>Tasks:</p>
+            </div>
+          </div>
+          <div class="todo-button">
+            <input
+              class="task-name"
+              id="task-name"
+              type="text"
+              placeholder="Task name:"
+            />
+            <button name="add_btn" onclick="add()">+ New task</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
