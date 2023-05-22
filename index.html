@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="src/main.js"></script>
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
-
     <title>Website todo</title>
   </head>
   <body>
@@ -18,10 +17,9 @@
         </div>
         <div class="todo-items-container">
           <div class="todo-items" id="todo-list">
-            <div class="todo-item">
-              <p>Tasks:</p>
-            </div>
+            <p>Tasks:</p>
           </div>
+          <div class="todo-items" id="added-tasks"></div>
           <div class="todo-button">
             <input
               class="task-name"
@@ -29,12 +27,8 @@
               type="text"
               placeholder="Task name:"
             />
-            <button onclick="createTask()" id="add_btn" name="add_btn">
-              + New task
-            </button>
-            <button onclick="restore()" id="restore_btn" name="restore_btn">
-              Restore
-            </button>
+            <button id="add_btn" name="add_btn">+ New task</button>
+            <button id="restore_btn" name="restore_btn">Restore</button>
           </div>
         </div>
       </div>
