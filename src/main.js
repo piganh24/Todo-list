@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     addBtn.addEventListener("click", createTask);
     var restoreBtn = document.getElementById("restore_btn");
     restoreBtn.addEventListener("click", restoreData);
-    //restore();
+    //restoreData();
 });
 
 const  createTask = () => {
