@@ -70,3 +70,19 @@ body{
     width: 15px;
 }
 
+
+  
+.container {
+    background-color: #333;
+  }
+  
+.draggable {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+}
+  
+.draggable.dragging {
+    opacity: .5;
+}

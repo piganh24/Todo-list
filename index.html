@@ -4,31 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="src/main.js"></script>
+    <script src="src/main.js" defer></script>
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
     <title>Website todo</title>
   </head>
   <body>
+    <div class="container">
+      <p class="draggable" draggable="true">1</p>
+      <p class="draggable" draggable="true">2</p>
+    </div>
+    <div class="container">
+      <p class="draggable" draggable="true">3</p>
+      <p class="draggable" draggable="true">4</p>
+    </div>
     <div class="app">
       <div class="todo-container">
         <div class="todo-header">
           <div class="menu">Website todo</div>
-          <h1 class="title"></h1>
         </div>
         <div class="todo-items-container">
           <div class="todo-items" id="todo-list">
             <p>Tasks:</p>
           </div>
-          <div class="todo-items" id="added-tasks"></div>
-          <div class="todo-button">
-            <input
-              class="task-name"
-              id="task-name"
-              type="text"
-              placeholder="Task name:"
-            />
-            <button id="add_btn" name="add_btn">+ New task</button>
-          </div>
+        </div>
+        <div class="container" id="added-tasks">
+          <input
+            class="task-name"
+            id="task-name"
+            type="text"
+            placeholder="Task name:"
+          />
+          <button id="add_btn" name="add_btn">+ New task</button>
+          <p class="draggable" draggable="true">4</p>
         </div>
       </div>
     </div>
